@@ -23,11 +23,11 @@ li a {
     padding: 0;
 }
 
-.list li {
+.list1 li {
     list-style: none;
 }
 
-.list li a {
+.list1 li a {
     float: left;
     border-right: 1px solid #fff;
 }
@@ -44,15 +44,12 @@ li a {
     position: relative;
 }
 
-parent ul {
+.parent ul {
     width: 20%;
-    display: none;
+    display: block;
     position: absolute;
     padding:0;
     top: 56px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0s;
 }
 
 .parent ul a {
@@ -61,13 +58,12 @@ parent ul {
     border-top: 1px solid #fff;
     visibility: hidden;
     opacity: 0;
-    transition: 5s;
+    transition: .5s;
 }
 
 .parent:hover ul {
-    display: block;
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
 }
 
 .parent:hover ul a {
